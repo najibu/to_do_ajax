@@ -31,10 +31,10 @@
     </section>
     <section id="form_section">
 
-      <form class="todo" id="add_task" style="display: none">
+      <form action="/add" method="post" class="todo" id="add_task" style="display: none">
         {!! csrf_field() !!}
         <input type="text" id="task_title" name="title" placeholder="Enter a task name" value="">
-        <button name="submit">Add Task</button>
+        <button type="submit">Add Task</button>
       </form>
 
       <form id="edit_task" class="todo" style="display: none">

@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TodosController@getIndex');
+Route::get('/done/{id}', 'TodosController@getDone');
+Route::post('/add', 'TodosController@postAdd');
+Route::post('/update/{id}', 'TodosController@postUpdate');
+Route::get('/delete/{id}', 'TodosController@getDelete');
+
+
+

@@ -21,7 +21,7 @@ function delete_task(id) {
 function show_form(form_id){
   $("form").hide();
 
-  $('#'+form_id).show("show");
+  $('#'+form_id).show("slow");
 }
 
 function edit_task(id, title){
